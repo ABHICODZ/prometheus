@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhinav — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+<div class="grain" aria-hidden="true"></div>
+
+<div id="loader" aria-hidden="true">
+  <div class="mark">AB</div>
+  <div class="loadtext">BOOTING WORKSHOP</div>
+</div>
+
+<header class="nav">
+  <a href="#top" class="logo">AB</a>
+  <nav>
+    <a href="#portrait">ABOUT</a>
+    <a href="#work">WORK</a>
+    <a href="#beyond">BEYOND</a>
+    <a href="#world">WORLD</a>
+    <a href="#stack">STACK</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="heroGl" aria-hidden="true"></canvas>
+    <div class="guides" aria-hidden="true"></div>
+    <p class="eyebrow"><span data-f="year"></span> / <span data-f="role"></span></p>
+    <h1 data-f="name">ABHINAV</h1>
+    <div class="hero-row">
+      <div class="hero-copy">
+        <div class="next"><span>NOW BUILDING</span><strong data-f="nowBuilding"></strong></div>
+        <div class="next"><span data-f="since"></span><strong data-f="college"></strong></div>
+        <p class="hint mono">Try the machine. Move across it and the air changes.</p>
+      </div>
+      <iframe class="fig" src="assets/fig-station.html" title="Interactive isometric air-quality mast" data-fig="fig-station"></iframe>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track"><span>AI / ML</span><span>GEOSPATIAL</span><span>ROBOTICS</span><span>INDIAN KNOWLEDGE</span><span>FULL-STACK</span><span>RESEARCH</span><span>AI / ML</span><span>GEOSPATIAL</span><span>ROBOTICS</span><span>INDIAN KNOWLEDGE</span><span>FULL-STACK</span><span>RESEARCH</span></div></div>
+
+  <section class="message">
+    <p class="eyebrow">MESSAGE FROM <span data-f="name"></span></p>
+    <p class="big" data-f="message"></p>
+    <blockquote data-f="quote"></blockquote>
+    <p class="bio" data-f="bio"></p>
+  </section>
+
+  <section id="portrait" class="portrait">
+    <div class="portrait-grid">
+      <div id="portraitStage" class="pstage" role="img" aria-label="Photos of Abhinav rendered as ASCII characters. Move the pointer over them to reveal the real photo.">
+        <canvas id="portraitGl"></canvas>
+        <img class="fallback" src="assets/photos/p6697.jpg" alt="Abhinav speaking at a podium">
+        <span class="pcap mono" id="portraitCap">AT THE PODIUM · GCET</span>
+      </div>
+      <div class="portrait-copy">
+        <p class="eyebrow">THE PERSON BEHIND THE CODE</p>
+        <h2 class="serif">Hello, I'm Abhinav.</h2>
+        <p class="sub">Same photo, rebuilt from characters. Move over it to open a lens onto the real thing, or flip to the next shot.</p>
+        <div class="pbtns">
+          <button type="button" data-photo="0" aria-pressed="true">I</button>
+          <button type="button" data-photo="1" aria-pressed="false">II</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <h2>ON<br>SCREEN</h2>
+    <p class="sub">Selected projects, from my GitHub and from the lab.</p>
+    <ul id="projects" class="cards"></ul>
+  </section>
+
+  <section class="bench">
+    <div class="bench-copy">
+      <p class="eyebrow">ON THE BENCH</p>
+      <h2>SAY<br>HELLO</h2>
+      <p class="sub">GreetBot made the top 16 at the IEEE Computer Society 80th anniversary expo. This one doesn't need a Pi.</p>
+    </div>
+    <iframe class="fig" src="assets/fig-greetbot.html" title="Interactive isometric GreetBot robot" loading="lazy" data-fig="fig-greetbot"></iframe>
+  </section>
+
+  <section id="beyond" class="beyond">
+    <h2>OFF<br>SCREEN</h2>
+    <p class="sub">Hackathons, community and things that are not code.</p>
+    <ul id="beyondList" class="cards dark"></ul>
+  </section>
+
+  <section id="world" class="world">
+    <div class="world-copy">
+      <p class="eyebrow">ORBIT VIEW</p>
+      <h2>WHERE THE<br>WORK GOES</h2>
+      <p class="sub">Hyderabad to Delhi NCR for VayuDrishti, and an application to Barcelona. A Sentinel-5P style satellite keeps watch. Drag the globe.</p>
+    </div>
+    <div id="globe" class="globe" role="img" aria-label="Interactive 3D globe with Hyderabad, Delhi and Barcelona marked and a satellite in orbit"></div>
+  </section>
+
+  <section id="stack" class="stack">
+    <div class="stack-grid">
+      <div>
+        <h2>STACK<br>HALL OF FAME</h2>
+        <p class="sub">Tools I reach for, strongest first.</p>
+        <ul id="stackList" class="hall"></ul>
+      </div>
+      <iframe class="fig" src="assets/fig-abacus.html" title="Interactive isometric abacus" loading="lazy" data-fig="fig-abacus"></iframe>
+    </div>
+    <ul id="exp" class="exp"></ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>LET'S<br>BUILD</h2>
+    <p class="email"><a id="mail" href="#"></a></p>
+    <ul id="socials" class="socials"></ul>
+  </section>
+</main>
+
+<footer>
+  <span>ALWAYS BUILDING.</span>
+  <span>© <span data-f="year"></span> <span data-f="fullName"></span>. ALL RIGHTS RESERVED</span>
+</footer>
+
+<div id="pet" class="pet" aria-label="Byte, the website cat. Click to pet." role="button" tabindex="0">
+  <div class="speech" id="petSpeech">mrrp</div>
+  <svg viewBox="0 0 86 64" width="86" height="64" aria-hidden="true">
+    <g class="cat" id="cat">
+      <path class="tail" d="M14 38 C0 36 2 14 12 16" fill="none" stroke="#ff6a2b" stroke-width="7" stroke-linecap="round"/>
+      <rect class="leg l1" x="19" y="42" width="7" height="14" rx="3" fill="#d94a12"/>
+      <rect class="leg l2" x="29" y="42" width="7" height="14" rx="3" fill="#ff6a2b"/>
+      <rect class="leg l2" x="46" y="42" width="7" height="14" rx="3" fill="#d94a12"/>
+      <rect class="leg l1" x="56" y="42" width="7" height="14" rx="3" fill="#ff6a2b"/>
+      <ellipse cx="38" cy="38" rx="25" ry="14" fill="#ff6a2b"/>
+      <ellipse cx="40" cy="45" rx="15" ry="6" fill="#ffe3d6"/>
+      <g class="head">
+        <polygon points="54,20 55,6 63,16" fill="#ff6a2b"/><polygon points="66,16 73,6 75,21" fill="#ff6a2b"/>
+        <polygon points="57,17 57,10 61,15" fill="#ffb59a"/><polygon points="68,15 72,10 73,18" fill="#ffb59a"/>
+        <circle cx="64" cy="28" r="13" fill="#ff6a2b"/>
+        <g class="eyes"><circle cx="59" cy="27" r="2" fill="#070928"/><circle cx="69" cy="27" r="2" fill="#070928"/></g>
+        <path class="sleepeyes" d="M56 28 q3 3 6 0 M66 28 q3 3 6 0" fill="none" stroke="#070928" stroke-width="1.6" stroke-linecap="round"/>
+        <polygon points="62,31 66,31 64,33.5" fill="#070928"/>
+        <path d="M64 33.5 v2 M60 36 q4 2 4 -0.5 q0 2.5 4 0.5" fill="none" stroke="#070928" stroke-width="1" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+  <span class="zzz" aria-hidden="true">z z z</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="content.js"></script>
+<script src="app.js"></script>
+<script src="globe.js"></script>
+<script src="pet.js"></script>
+<script src="hero-fx.js"></script>
+<script src="portrait.js"></script>
+<script src="fx.js"></script>
+</body>
+</html>
